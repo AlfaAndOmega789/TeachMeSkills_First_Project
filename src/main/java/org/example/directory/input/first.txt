@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<TransferMoneyRequest TransferMoneyRequestNumber="99503" OrderDate="1999-10-20">
+  <Sender>
+    <Name>Ellen Adams</Name>
+    <SenderAccountNumber>11111-11111</SenderAccountNumber>
+    <USAmountOfMoneyInTheAccountSender>15000</USAmountOfMoneyInTheAccountSender>
+    <Street>123 Maple Street</Street>
+    <City>Mill Valley</City>
+    <State>CA</State>
+    <Zip>10999</Zip>
+    <Country>USA</Country>
+  </Sender>
+  <Receiver>
+    <Name>Tai Yee</Name>
+    <ReceiverAccountNumber>22222-22222</ReceiverAccountNumber>
+    <USAmountOfMoneyInTheAccountReceiver>100</USAmountOfMoneyInTheAccountReceiver>
+    <Street>8 Oak Avenue</Street>
+    <City>Old Town</City>
+    <State>PA</State>
+    <Zip>95819</Zip>
+    <Country>USA</Country>
+  </Receiver>
+  <Description>Please transfer me money for lunch.</Description>
+  <Transfer>
+     <SUM>50</SUM>
+     <USСommissionBank>3</USСommissionBank>
+     <Comment>Thank you for using our services</Comment>
+  </Transfer>
+</TransferMoneyRequest>
