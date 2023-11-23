@@ -21,7 +21,7 @@ public class WriteToReportFile {
     static DOMProjectParser dom = new DOMProjectParser();
 
     /**
-     * Метод записывает спаршенную информацию в файл Report
+     * Метод записывает вычитанную информацию из файла(каталог input) .txt в файл Report(каталог archive)
      * @param PATH_ARCHIVE
      * @param NAME_REPORT_FILE -
      * @param PATH_INPUT -
