@@ -2,6 +2,7 @@ package org.example.write;
 
 import org.example.check.CheckParsingInfo;
 import org.example.create.CreateFileReport;
+import org.example.list.txt.GenerateListTxt;
 import org.example.parser.DOMProjectParser;
 import org.xml.sax.SAXException;
 
@@ -21,6 +22,7 @@ public class WriteToReportFile {
     private static final String NAME_REPORT_FILE = "FILE_REPORT_GENERAL.txt";
     static DOMProjectParser dom = new DOMProjectParser();
     static CheckParsingInfo check = new CheckParsingInfo();
+    static GenerateListTxt generate = new GenerateListTxt();
 
     /**
      * Метод записывает строку в  файл Report(каталог archive)
@@ -35,7 +37,13 @@ public class WriteToReportFile {
         String reportAbsolutePath = PATH_ARCHIVE + NAME_REPORT_FILE;
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(reportAbsolutePath, StandardCharsets.UTF_8))) {
-            writer.write(castingToString(PATH_INPUT));
+            List<String> list = castingToString(PATH_INPUT);
+
+            for(String str: list){
+                writer.write(str);
+                writer.newLine();
+            }
+
         }catch (IOException e){
             e.printStackTrace();
         } catch (ParserConfigurationException e) {
@@ -52,14 +60,19 @@ public class WriteToReportFile {
      * @throws IOException
      * @throws SAXException
      */
-    public String castingToString(String PATH_INPUT) throws ParserConfigurationException, IOException, SAXException {
-        String inputAbsolutePath = PATH_INPUT + "first.txt";
-        List<String> listParse = dom.parsingFile(inputAbsolutePath);
+    public List<String> castingToString(String PATH_INPUT) throws ParserConfigurationException, IOException, SAXException {
+        List<String> list = generate.listFileNamesTxt(PATH_INPUT);
+        List<String> result = new ArrayList<>();
 
+        for(int i = 0; i < list.size();i++){
+            String inputAbsolutePath = PATH_INPUT + list.get(i);
+            List<String> listParse = dom.parsingFile(inputAbsolutePath);
 
-        String result = getCurrentDate() + " | " + "first.txt" + " | перевод с " +
-                listParse.get(0) + " на " + listParse.get(2) + " " +
-                listParse.get(3) + " | " + check.checkAll(listParse);
+            result.add(getCurrentDate() + " | " + list.get(i) + " | перевод с " +
+                    listParse.get(0) + " на " + listParse.get(2) + " " +
+                    listParse.get(3) + " | " + check.checkAll(listParse));
+        }
+
         return result;
     }
     /**

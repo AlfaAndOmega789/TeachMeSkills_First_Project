@@ -29,8 +29,11 @@ public class UpdateReportFile {
             File file = new File(PATH_ARCHIVE + NAME_REPORT_FILE);
 
             if(!isEmpty(file)){
-                buffer.write(write.castingToString(PATH_INPUT));
-                buffer.newLine();
+                List<String> list = write.castingToString(PATH_INPUT);
+                for(String str :list){
+                    buffer.write(str);
+                    buffer.newLine();
+                }
 
             }else if(isEmpty(file)) {
                 write.writeToReportFile(PATH_ARCHIVE, NAME_REPORT_FILE, PATH_INPUT);
