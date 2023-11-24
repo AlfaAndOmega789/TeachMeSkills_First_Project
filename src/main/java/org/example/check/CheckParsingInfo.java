@@ -3,6 +3,11 @@ package org.example.check;
 import java.util.List;
 
 public class CheckParsingInfo {
+
+    public static void main(String[] args) {
+        CheckParsingInfo check = new CheckParsingInfo();
+        System.out.println(check.checkAmountLength("100"));
+    }
     public String checkAll(List<String> list){
         String resultOperation = null;
 
@@ -35,7 +40,7 @@ public class CheckParsingInfo {
      * @return
      */
     public boolean checkTransferAmount(String str){
-        return Integer.parseInt(str) > 0 ;
+        return Integer.parseInt(str) > 0;
     }
     /**
      * Проверка на отсутствие заполненого поля(суммы перевода)
@@ -43,7 +48,7 @@ public class CheckParsingInfo {
      * @return
      */
     public boolean checkAmountLength(String str){
-        return str.length() == 0;
+        return str.length() != 0;
     }
     /**
      * Cравнение суммы перевода с количеством денежных средств на счёте отправителя
