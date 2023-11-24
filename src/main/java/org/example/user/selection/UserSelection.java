@@ -38,6 +38,7 @@ public class UserSelection {
 
                 UpdateReportFile updateReportFile = new UpdateReportFile();
                 updateReportFile.updateReportFile(PATH_ARCHIVE,NAME_REPORT_FILE, PATH_INPUT);
+                break;
 
             }else if(enteredUser == 2){
                 OutputReportInfo output = new OutputReportInfo();
