@@ -8,6 +8,17 @@ public class CheckParsingInfo {
         CheckParsingInfo check = new CheckParsingInfo();
         System.out.println(check.checkLengthBilling("1111-22222"));
     }
+
+    /**
+     * Вызов всех проверок
+     * @param list - спаршенные данные
+     * @return
+     *
+     * 0. Номер счёта отправителя
+     * 1. Сумма денежных средств на счёте отправителя
+     * 2. Номер счёта получателя
+     * 3. Сумма перевода
+     */
     public String checkAll(List<String> list){
         String resultOperation = null;
 
