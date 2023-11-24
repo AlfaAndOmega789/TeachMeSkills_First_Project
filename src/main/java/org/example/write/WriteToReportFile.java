@@ -55,6 +55,8 @@ public class WriteToReportFile {
     public String castingToString(String PATH_INPUT) throws ParserConfigurationException, IOException, SAXException {
         String inputAbsolutePath = PATH_INPUT + "first.txt";
         List<String> listParse = dom.parsingFile(inputAbsolutePath);
+
+
         String result = getCurrentDate() + " | " + "first.txt" + " | перевод с " +
                 listParse.get(0) + " на " + listParse.get(2) + " " +
                 listParse.get(3) + " | " + check.checkAll(listParse);

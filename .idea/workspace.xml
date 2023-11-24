@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="554dacd3-bab1-40aa-b76e-14c1a570031e" name="Changes" comment="add class CheckParsingInfo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/list/txt/GenerateListTxt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/update/UpdateReportFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/directory/input/second.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/check/CheckParsingInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/check/CheckParsingInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/description.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/description.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/directory/input/first.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/directory/input/first.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/write/WriteToReportFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/write/WriteToReportFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,29 +36,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/user/IdeaProjects/TeachMeSkills_First_Project/src/main/java/org/example/directory/input",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/user/IdeaProjects/TeachMeSkills_First_Project/src/main/java/org/example/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/TeachMeSkills_First_Project/src/main/java/org/example/directory/input&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/user/IdeaProjects/TeachMeSkills_First_Project/src/main/java/org/example/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\IdeaProjects\TeachMeSkills_First_Project\src\main\java\org\example\directory\input" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GenerateListTxt">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="CheckParsingInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.check.CheckParsingInfo" />
       <module name="TeachMeSkills_First_Project" />
@@ -127,10 +126,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GenerateListTxt" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.UpdateReportFile" />
         <item itemvalue="Application.CheckParsingInfo" />
+        <item itemvalue="Application.GenerateListTxt" />
+        <item itemvalue="Application.UpdateReportFile" />
         <item itemvalue="Application.DOMProjectParser" />
       </list>
     </recent_temporary>

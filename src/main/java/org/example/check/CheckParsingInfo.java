@@ -6,18 +6,16 @@ public class CheckParsingInfo {
 
     public static void main(String[] args) {
         CheckParsingInfo check = new CheckParsingInfo();
-        System.out.println(check.checkAmountLength("100"));
+        System.out.println(check.checkLengthBilling("1111-22222"));
     }
     public String checkAll(List<String> list){
         String resultOperation = null;
 
-        if(!checkLengthBilling(list.get(0)) &&
-                !checkLengthBilling(list.get(3))){
+        if(!checkLengthBilling(list.get(0)) ||
+                !checkLengthBilling(list.get(2))){
             resultOperation = "Неуспешно. Некорректный номер счета отправителя или получателя.";
         }else if(!checkTransferAmount(list.get(3))){
             resultOperation = "Неуспешно. Указана некорректная сумма перевода.";
-        }else if(!checkAmountLength(list.get(3))){
-            resultOperation = "Неуспешно. Не заполнено поле суммы.";
         }else if(!checkTheRecipientBilling(
                 list.get(1), list.get(3))){
             resultOperation = "Неуспешно. Сумма перевода превышает кол-во денежных средств на счете отправителя";
@@ -43,20 +41,12 @@ public class CheckParsingInfo {
         return Integer.parseInt(str) > 0;
     }
     /**
-     * Проверка на отсутствие заполненого поля(суммы перевода)
-     * @param str
-     * @return
-     */
-    public boolean checkAmountLength(String str){
-        return str.length() != 0;
-    }
-    /**
      * Cравнение суммы перевода с количеством денежных средств на счёте отправителя
-     * @param str1
-     * @param str3
+     * @param str0
+     * @param str2
      * @return
      */
-    public boolean checkTheRecipientBilling(String str1, String str3){
-        return Double.parseDouble(str1) > Double.parseDouble(str3);
+    public boolean checkTheRecipientBilling(String str0, String str2){
+        return Double.parseDouble(str0) >= Double.parseDouble(str2);
     }
 }
