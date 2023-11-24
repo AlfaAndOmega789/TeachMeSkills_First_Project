@@ -17,9 +17,9 @@ import java.util.Date;
 import java.util.List;
 
 public class WriteToReportFile {
-    private static final String PATH_ARCHIVE = "src\\main\\java\\org\\example\\directory\\archive\\";
-    private static final String PATH_INPUT = "src\\main\\java\\org\\example\\directory\\input\\";
-    private static final String NAME_REPORT_FILE = "FILE_REPORT_GENERAL.txt";
+//    private static final String PATH_ARCHIVE = "src\\main\\java\\org\\example\\directory\\archive\\";
+//    private static final String PATH_INPUT = "src\\main\\java\\org\\example\\directory\\input\\";
+//    private static final String NAME_REPORT_FILE = "FILE_REPORT_GENERAL.txt";
     static DOMProjectParser dom = new DOMProjectParser();
     static CheckParsingInfo check = new CheckParsingInfo();
     static GenerateListTxt generate = new GenerateListTxt();

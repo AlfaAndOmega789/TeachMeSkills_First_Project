@@ -4,10 +4,10 @@ import java.util.List;
 
 public class CheckParsingInfo {
 
-    public static void main(String[] args) {
-        CheckParsingInfo check = new CheckParsingInfo();
-        System.out.println(check.checkLengthBilling("1111-22222"));
-    }
+//    public static void main(String[] args) {
+//        CheckParsingInfo check = new CheckParsingInfo();
+//        System.out.println(check.checkLengthBilling("1111-22222"));
+//    }
 
     /**
      * Вызов всех проверок

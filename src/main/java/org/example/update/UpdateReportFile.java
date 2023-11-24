@@ -8,15 +8,15 @@ import java.io.*;
 import java.util.List;
 
 public class UpdateReportFile {
-    private static final String PATH_INPUT = "src\\main\\java\\org\\example\\directory\\input\\";
-    private static final String PATH_ARCHIVE = "src\\main\\java\\org\\example\\directory\\archive\\";
-    private static final String NAME_REPORT_FILE = "FILE_REPORT_GENERAL.txt";
-    WriteToReportFile write = new WriteToReportFile();
-
-    public static void main(String[] args) {
-        UpdateReportFile updateReportFile = new UpdateReportFile();
-        updateReportFile.updateReportFile(PATH_ARCHIVE,NAME_REPORT_FILE, PATH_INPUT);
-    }
+//    private static final String PATH_INPUT = "src\\main\\java\\org\\example\\directory\\input\\";
+//    private static final String PATH_ARCHIVE = "src\\main\\java\\org\\example\\directory\\archive\\";
+//    private static final String NAME_REPORT_FILE = "FILE_REPORT_GENERAL.txt";
+    static WriteToReportFile write = new WriteToReportFile();
+//
+//    public static void main(String[] args) {
+//        UpdateReportFile updateReportFile = new UpdateReportFile();
+//        updateReportFile.updateReportFile(PATH_ARCHIVE,NAME_REPORT_FILE, PATH_INPUT);
+//    }
     /**
      * В случае если файл пустой(не имеет записей), записывает строку,
      * иначе продолжает записывать инфо в след строки

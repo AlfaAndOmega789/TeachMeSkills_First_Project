@@ -14,13 +14,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DOMProjectParser {
-    private static final String PATH_INPUT = "src\\main\\java\\org\\example\\directory\\input\\";
-    public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
-        List<String> list = parsingFile(PATH_INPUT + "first.txt");
-        for(String str : list){
-            System.out.println(str);
-        }
-    }
+//    private static final String PATH_INPUT = "src\\main\\java\\org\\example\\directory\\input\\";
+//    public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
+//        List<String> list = parsingFile(PATH_INPUT + "first.txt");
+//        for(String str : list){
+//            System.out.println(str);
+//        }
+//    }
 
     /**
      * Метод парсит xml файлы и возвращает list
