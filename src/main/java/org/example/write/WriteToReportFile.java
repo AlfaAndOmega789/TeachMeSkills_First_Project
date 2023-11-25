@@ -21,7 +21,7 @@ public class WriteToReportFile {
 //    private static final String PATH_INPUT = "src\\main\\java\\org\\example\\directory\\input\\";
 //    private static final String NAME_REPORT_FILE = "FILE_REPORT_GENERAL.txt";
     static DOMProjectParser dom = new DOMProjectParser();
-    static CheckParsingInfo check = new CheckParsingInfo();
+
     static GenerateListTxt generate = new GenerateListTxt();
 
     /**
@@ -63,6 +63,7 @@ public class WriteToReportFile {
     public List<String> castingToString(String PATH_INPUT) throws ParserConfigurationException, IOException, SAXException {
         List<String> list = generate.listFileNamesTxt(PATH_INPUT);
         List<String> result = new ArrayList<>();
+        CheckParsingInfo check = new CheckParsingInfo();
 
         for(int i = 0; i < list.size();i++){
             String inputAbsolutePath = PATH_INPUT + list.get(i);

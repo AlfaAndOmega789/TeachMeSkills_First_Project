@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/ivank/IdeaProjects/TeachMeSkills_First_Project/src</OriginalElement>
+  <nodes>
+    <node x="604.0" y="583.1277901785714">org.example.user.selection.UserSelection</node>
+    <node x="595.6417410714286" y="-107.97433035714289">org.example.list.txt.GenerateListTxt</node>
+    <node x="240.39999999999998" y="-90.39999999999999">org.example.parser.DOMProjectParser</node>
+    <node x="935.2991071428572" y="414.8772321428571">org.example.create.CreateFileReport</node>
+    <node x="609.0" y="751.3783482142858">org.example.Main</node>
+    <node x="-175.0" y="-80.0">org.example.check.CheckParsingInfo</node>
+    <node x="152.5" y="150.0">org.example.write.WriteToReportFile</node>
+    <node x="552.0" y="414.8772321428571">org.example.output.OutputReportInfo</node>
+    <node x="166.35044642857144" y="390.8772321428571">org.example.update.UpdateReportFile</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.example.write.WriteToReportFile" target="org.example.list.txt.GenerateListTxt" relationship="CREATE">
+      <point x="156.0" y="-68.5" />
+      <point x="472.0" y="123.5" />
+      <point x="609.6417410714286" y="123.5" />
+      <point x="-125.5" y="44.0" />
+    </edge>
+    <edge source="org.example.write.WriteToReportFile" target="org.example.parser.DOMProjectParser" relationship="TO_ONE">
+      <point x="15.0" y="-68.5" />
+      <point x="331.0" y="120.19999999999999" />
+      <point x="410.99999999999994" y="120.19999999999999" />
+      <point x="410.99999999999994" y="47.300000000000004" />
+      <point x="377.4" y="47.300000000000004" />
+      <point x="15.0" y="44.0" />
+    </edge>
+    <edge source="org.example.update.UpdateReportFile" target="org.example.write.WriteToReportFile" relationship="TO_ONE">
+      <point x="0.0" y="-56.0" />
+      <point x="327.85044642857144" y="312.0" />
+      <point x="370.5" y="312.0" />
+      <point x="54.5" y="68.5" />
+    </edge>
+    <edge source="org.example.write.WriteToReportFile" target="org.example.list.txt.GenerateListTxt" relationship="TO_ONE">
+      <point x="163.5" y="0.0" />
+      <point x="728.7417410714285" y="218.5" />
+      <point x="728.7417410714285" y="99.26283482142856" />
+      <point x="735.1417410714286" y="99.26283482142856" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="org.example.user.selection.UserSelection" target="org.example.update.UpdateReportFile" relationship="CREATE">
+      <point x="-87.0" y="0.0" />
+      <point x="327.85044642857144" y="627.1277901785714" />
+      <point x="0.0" y="56.0" />
+    </edge>
+    <edge source="org.example.write.WriteToReportFile" target="org.example.write.WriteToReportFile" relationship="DEPENDENCY">
+      <point x="69.5" y="68.5" />
+      <point x="385.5" y="304.5" />
+      <point x="857.5" y="304.5" />
+      <point x="857.5" y="233.5" />
+      <point x="163.5" y="15.0" />
+    </edge>
+    <edge source="org.example.check.CheckParsingInfo" target="org.example.check.CheckParsingInfo" relationship="DEPENDENCY">
+      <point x="0.0" y="-80.0" />
+      <point x="-0.5" y="-97.5" />
+      <point x="201.5" y="-97.5" />
+      <point x="201.5" y="-61.5" />
+      <point x="174.5" y="-61.5" />
+    </edge>
+    <edge source="org.example.user.selection.UserSelection" target="org.example.create.CreateFileReport" relationship="CREATE">
+      <point x="87.0" y="0.0" />
+      <point x="1072.2991071428573" y="627.1277901785714" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="org.example.update.UpdateReportFile" target="org.example.write.WriteToReportFile" relationship="CREATE">
+      <point x="-54.5" y="-56.0" />
+      <point x="273.35044642857144" y="351.43861607142856" />
+      <point x="200.55044642857143" y="351.43861607142856" />
+      <point x="200.55044642857143" y="316.0" />
+      <point x="316.0" y="316.0" />
+      <point x="0.0" y="68.5" />
+    </edge>
+    <edge source="org.example.Main" target="org.example.user.selection.UserSelection" relationship="CREATE">
+      <point x="0.0" y="-44.0" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="org.example.write.WriteToReportFile" target="org.example.check.CheckParsingInfo" relationship="CREATE">
+      <point x="-163.5" y="0.0" />
+      <point x="-0.5" y="218.5" />
+      <point x="0.0" y="80.0" />
+    </edge>
+    <edge source="org.example.update.UpdateReportFile" target="org.example.update.UpdateReportFile" relationship="DEPENDENCY">
+      <point x="10.5" y="56.0" />
+      <point x="338.35044642857144" y="515.8772321428571" />
+      <point x="502.35044642857144" y="515.8772321428571" />
+      <point x="502.35044642857144" y="493.8772321428571" />
+      <point x="161.5" y="47.0" />
+    </edge>
+    <edge source="org.example.write.WriteToReportFile" target="org.example.parser.DOMProjectParser" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="316.0" y="123.5" />
+      <point x="256.8" y="123.5" />
+      <point x="256.8" y="42.90000000000001" />
+      <point x="362.4" y="42.90000000000001" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="org.example.user.selection.UserSelection" target="org.example.output.OutputReportInfo" relationship="CREATE">
+      <point x="0.0" y="-44.0" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="org.example.write.WriteToReportFile" target="org.example.check.CheckParsingInfo" relationship="TO_ONE">
+      <point x="-149.5" y="-68.5" />
+      <point x="167.0" y="80.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8000000000000003" showDependencies="true" x="357.2499999999999" y="76.62499999999994" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
