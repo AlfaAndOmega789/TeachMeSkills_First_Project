@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FilterByDate {
-    private static final String PATH_ARCHIVE = "src\\main\\java\\org\\example\\directory\\archive\\";
-    private static final String NAME_REPORT_FILE = "FILE_REPORT_GENERAL.txt";
+//    private static final String PATH_ARCHIVE = "src\\main\\java\\org\\example\\directory\\archive\\";
+//    private static final String NAME_REPORT_FILE = "FILE_REPORT_GENERAL.txt";
 
 //    public static void main(String[] args) throws IOException {
 //        OutputReportInfo output = new OutputReportInfo();
@@ -35,5 +35,4 @@ public class FilterByDate {
         }
         return newList;
     }
-
 }

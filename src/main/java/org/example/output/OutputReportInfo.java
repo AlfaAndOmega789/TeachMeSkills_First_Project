@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OutputReportInfo {
-    private static final String PATH_ARCHIVE = "src\\main\\java\\org\\example\\directory\\archive\\";
-    private static final String NAME_REPORT_FILE = "FILE_REPORT_GENERAL.txt";
+//    private static final String PATH_ARCHIVE = "src\\main\\java\\org\\example\\directory\\archive\\";
+//    private static final String NAME_REPORT_FILE = "FILE_REPORT_GENERAL.txt";
 //    public static void main(String[] args) throws IOException {
 //        outputReportInfo(PATH_ARCHIVE , NAME_REPORT_FILE);
 //    }
@@ -47,6 +47,15 @@ public class OutputReportInfo {
 
         return list;
     }
+
+    /**
+     * Генерирует лист срок за определнную дату из файла REPORT
+     * @param PATH_ARCHIVE
+     * @param NAME_REPORT_FILE
+     * @param str
+     * @return
+     * @throws IOException
+     */
     public List<String> generateReportByDateInfo(String PATH_ARCHIVE, String NAME_REPORT_FILE, String str) throws IOException {
         FilterByDate filter = new FilterByDate();
         List<String> list = filter.filterByDate(generateReportFullInfo(PATH_ARCHIVE, NAME_REPORT_FILE),  str);

@@ -57,9 +57,7 @@ public class UserSelection {
                 System.out.println();
 
                 if(newEnteredUser == 1){
-                    FilterByDate filter = new FilterByDate();
                     System.out.print("Введите дату формата ddMMyyyy: ");
-
                     String str = reader.readLine();
 
                     List<String> outputList = output.generateReportByDateInfo(PATH_ARCHIVE, NAME_REPORT_FILE, str);
