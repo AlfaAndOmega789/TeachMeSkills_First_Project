@@ -1,12 +1,14 @@
 package org.example.output;
 
+import org.example.filter.FilterByDate;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class OutputReportInfo {
-//    private static final String PATH_ARCHIVE = "src\\main\\java\\org\\example\\directory\\archive\\";
-//    private static final String NAME_REPORT_FILE = "FILE_REPORT_GENERAL.txt";
+    private static final String PATH_ARCHIVE = "src\\main\\java\\org\\example\\directory\\archive\\";
+    private static final String NAME_REPORT_FILE = "FILE_REPORT_GENERAL.txt";
 //    public static void main(String[] args) throws IOException {
 //        outputReportInfo(PATH_ARCHIVE , NAME_REPORT_FILE);
 //    }
@@ -17,9 +19,7 @@ public class OutputReportInfo {
      * @param NAME_REPORT_FILE - файл REPORT
      * @throws IOException
      */
-    public void outputReportInfo(String PATH_ARCHIVE, String NAME_REPORT_FILE) throws IOException {
-        OutputReportInfo output = new OutputReportInfo();
-        List<String> list = generateReportInfo(PATH_ARCHIVE, NAME_REPORT_FILE);
+    public void outputReportInfo(String PATH_ARCHIVE, String NAME_REPORT_FILE, List<String> list) throws IOException {
 
         for(String str : list){
             System.out.println(str);
@@ -33,7 +33,7 @@ public class OutputReportInfo {
      * @return
      * @throws IOException
      */
-    public List<String> generateReportInfo(String PATH_ARCHIVE, String NAME_REPORT_FILE) throws IOException{
+    public List<String> generateReportFullInfo(String PATH_ARCHIVE, String NAME_REPORT_FILE) throws IOException{
         List<String> list = new ArrayList<>();
         String reportAbsolutePath = PATH_ARCHIVE + NAME_REPORT_FILE;
         BufferedReader reader = new BufferedReader(new FileReader(reportAbsolutePath));
@@ -44,6 +44,12 @@ public class OutputReportInfo {
             line = reader.readLine();
         }
         reader.close();
+
+        return list;
+    }
+    public List<String> generateReportByDateInfo(String PATH_ARCHIVE, String NAME_REPORT_FILE, String str) throws IOException {
+        FilterByDate filter = new FilterByDate();
+        List<String> list = filter.filterByDate(generateReportFullInfo(PATH_ARCHIVE, NAME_REPORT_FILE),  str);
 
         return list;
     }
