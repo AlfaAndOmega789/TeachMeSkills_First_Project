@@ -49,7 +49,7 @@ public class CheckParsingInfo {
      * @return
      */
     public boolean checkTransferAmount(String str){
-        return Integer.parseInt(str) > 0;
+        return Double.parseDouble(str) > 0;
     }
     /**
      * Cравнение суммы перевода с количеством денежных средств на счёте отправителя

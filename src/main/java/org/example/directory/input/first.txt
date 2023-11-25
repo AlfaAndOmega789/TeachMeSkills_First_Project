@@ -22,7 +22,7 @@
   </Receiver>
   <Description>Please transfer me money for lunch.</Description>
   <Transfer>
-     <SUM>50</SUM>
+     <SUM>45.56</SUM>
      <USСommissionBank>3</USСommissionBank>
      <Comment>Thank you for using our services</Comment>
   </Transfer>

@@ -31,6 +31,7 @@ public class UserSelection {
 
         while(someValue){
             int enteredUser = Integer.parseInt(reader.readLine());
+            System.out.println();
 
             if(enteredUser == 1){
                 CreateFileReport createFile = new CreateFileReport();
@@ -42,10 +43,24 @@ public class UserSelection {
 
             }else if(enteredUser == 2){
                 OutputReportInfo output = new OutputReportInfo();
-                output.outputReportInfo(PATH_ARCHIVE , NAME_REPORT_FILE);
-                break;
+
+                System.out.print("Выберете вариант из двух доступных:\n" +
+                        "1. Вызов  операций переводов из файла-отчета за определенную дату.\n" +
+                        "2. Вызов всех операций переводов из файла-отчета.\n" +
+                        "Для выбора операции нажмите 1 или 2 соответственно: "
+                );
+                int newEnteredUser = Integer.parseInt(reader.readLine());
+
+                if(newEnteredUser == 1){
+                    System.out.print("Введите дату формата ddMMyyyy:");
+
+                }else if(newEnteredUser == 2){
+
+                    output.outputReportInfo(PATH_ARCHIVE , NAME_REPORT_FILE);
+                    break;
+                }
             }else{
-                System.out.print("Вы ввели значение отличное от 1 или 2, повторите ввод снова:");
+                System.out.print("Вы ввели значение отличное от 1, 2 или 3, повторите ввод снова:");
             }
         }
     }
