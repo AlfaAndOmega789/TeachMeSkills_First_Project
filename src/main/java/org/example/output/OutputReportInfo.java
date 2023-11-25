@@ -20,7 +20,6 @@ public class OutputReportInfo {
      * @throws IOException
      */
     public void outputReportInfo(String PATH_ARCHIVE, String NAME_REPORT_FILE, List<String> list) throws IOException {
-
         for(String str : list){
             System.out.println(str);
         }
@@ -49,7 +48,7 @@ public class OutputReportInfo {
     }
 
     /**
-     * Генерирует лист срок за определнную дату из файла REPORT
+     * Генерирует лист строк за определнную дату из файла REPORT
      * @param PATH_ARCHIVE
      * @param NAME_REPORT_FILE
      * @param str
