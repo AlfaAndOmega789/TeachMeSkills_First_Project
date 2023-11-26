@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="554dacd3-bab1-40aa-b76e-14c1a570031e" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/directory/archive/FILE_REPORT_GENERAL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/database/WorkWithDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/description.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/description.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,29 +34,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/user/IdeaProjects/TeachMeSkills_First_Project/src/main/java/org/example/directory/input",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/user/IdeaProjects/TeachMeSkills_First_Project/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivank/IdeaProjects/TeachMeSkills_First_Project/src/main/java/org/example&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/user/IdeaProjects/TeachMeSkills_First_Project/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\IdeaProjects\TeachMeSkills_First_Project\src\main\java\org\example\directory\input" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ivank\IdeaProjects\TeachMeSkills_First_Project\src\main\java\org\example" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -71,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GenerateListTxt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.list.txt.GenerateListTxt" />
+    <configuration name="FilterByDate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.filter.FilterByDate" />
       <module name="TeachMeSkills_First_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.list.txt.*" />
+          <option name="PATTERN" value="org.example.filter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UpdateReportFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.update.UpdateReportFile" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Test" />
       <module name="TeachMeSkills_First_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.update.*" />
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,9 +138,9 @@
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.OutputReportInfo" />
+        <item itemvalue="Application.FilterByDate" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.CheckParsingInfo" />
-        <item itemvalue="Application.GenerateListTxt" />
-        <item itemvalue="Application.UpdateReportFile" />
       </list>
     </recent_temporary>
   </component>
@@ -142,6 +153,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700741335414</updated>
       <workItem from="1700755973974" duration="9019000" />
+      <workItem from="1701028438477" duration="2079000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -191,7 +203,79 @@
       <option name="project" value="LOCAL" />
       <updated>1700830997448</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1700851796665</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700851796665</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add diagram.uml">
+      <option name="closed" value="true" />
+      <created>1700891223891</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700891223891</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add filter date(finalize)">
+      <option name="closed" value="true" />
+      <created>1700931882176</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700931882176</updated>
+    </task>
+    <task id="LOCAL-00010" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1700935249504</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700935249504</updated>
+    </task>
+    <task id="LOCAL-00011" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1700936619290</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700936619290</updated>
+    </task>
+    <task id="LOCAL-00012" summary="change diagram.uml">
+      <option name="closed" value="true" />
+      <created>1700940428832</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700940428832</updated>
+    </task>
+    <task id="LOCAL-00013" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1700980133087</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1700980133087</updated>
+    </task>
+    <task id="LOCAL-00014" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1700981257540</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1700981257540</updated>
+    </task>
+    <task id="LOCAL-00015" summary="change diagram.uml">
+      <option name="closed" value="true" />
+      <created>1700981358701</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1700981358701</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +283,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add class CheckParsingInfo" />
+    <MESSAGE value="add diagram.uml" />
+    <MESSAGE value="add filter date(finalize)" />
+    <MESSAGE value="change diagram.uml" />
     <MESSAGE value="init commit" />
     <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
