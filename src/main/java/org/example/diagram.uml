@@ -3,120 +3,122 @@
   <ID>JAVA</ID>
   <OriginalElement>C:/Users/ivank/IdeaProjects/TeachMeSkills_First_Project/src</OriginalElement>
   <nodes>
-    <node x="273.21120689655174" y="420.0">org.example.user.selection.UserSelection</node>
-    <node x="464.46120689655174" y="-72.0">org.example.list.txt.GenerateListTxt</node>
-    <node x="-18.5" y="109.0">org.example.filter.FilterByDate</node>
-    <node x="763.4612068965517" y="-72.0">org.example.parser.DOMProjectParser</node>
-    <node x="-175.0" y="283.0">org.example.create.CreateFileReport</node>
-    <node x="278.21120689655174" y="533.0">org.example.Main</node>
-    <node x="95.46120689655174" y="-108.0">org.example.check.CheckParsingInfo</node>
-    <node x="542.5" y="97.0">org.example.write.WriteToReportFile</node>
-    <node x="119.0" y="259.0">org.example.output.OutputReportInfo</node>
-    <node x="625.25" y="271.0">org.example.update.UpdateReportFile</node>
+    <node x="826.625" y="418.0">org.example.user.selection.UserSelection</node>
+    <node x="458.0" y="-149.0">org.example.list.txt.GenerateListTxt</node>
+    <node x="728.1681034482758" y="69.5">org.example.filter.FilterByDate</node>
+    <node x="193.99999999999994" y="-149.0">org.example.parser.DOMProjectParser</node>
+    <node x="1131.6681034482758" y="256.0">org.example.create.CreateFileReport</node>
+    <node x="831.625" y="556.0">org.example.Main</node>
+    <node x="-175.0" y="-185.0">org.example.check.CheckParsingInfo</node>
+    <node x="266.6681034482758" y="45.0">org.example.write.WriteToReportFile</node>
+    <node x="678.6681034482758" y="232.0">org.example.output.OutputReportInfo</node>
+    <node x="335.6681034482758" y="244.0">org.example.update.UpdateReportFile</node>
   </nodes>
   <notes />
   <edges>
     <edge source="org.example.write.WriteToReportFile" target="org.example.list.txt.GenerateListTxt" relationship="CREATE">
-      <point x="-81.75" y="-56.0" />
-      <point x="624.25" y="77.0" />
-      <point x="598.9612068965517" y="77.0" />
-      <point x="598.9612068965517" y="67.0" />
-      <point x="534.2112068965517" y="67.0" />
-      <point x="-69.75" y="31.5" />
+      <point x="-81.75" y="-68.5" />
+      <point x="348.4181034482758" y="25.0" />
+      <point x="310.99999999999994" y="25.0" />
+      <point x="310.99999999999994" y="15.0" />
+      <point x="527.75" y="15.0" />
+      <point x="-69.75" y="44.0" />
     </edge>
     <edge source="org.example.write.WriteToReportFile" target="org.example.parser.DOMProjectParser" relationship="TO_ONE">
-      <point x="81.75" y="-56.0" />
-      <point x="787.75" y="77.0" />
-      <point x="890.4612068965516" y="77.0" />
-      <point x="890.4612068965516" y="57.0" />
-      <point x="946.4612068965516" y="57.0" />
-      <point x="61.0" y="31.5" />
+      <point x="81.75" y="-68.5" />
+      <point x="511.9181034482758" y="25.0" />
+      <point x="602.5" y="25.0" />
+      <point x="602.5" y="5.0" />
+      <point x="377.0" y="5.0" />
+      <point x="61.0" y="44.0" />
     </edge>
     <edge source="org.example.update.UpdateReportFile" target="org.example.write.WriteToReportFile" relationship="TO_ONE">
-      <point x="80.75" y="-43.5" />
-      <point x="867.5" y="239.0" />
-      <point x="815.0" y="239.0" />
-      <point x="109.0" y="56.0" />
+      <point x="-80.75" y="-56.0" />
+      <point x="416.4181034482758" y="212.0" />
+      <point x="430.1681034482758" y="212.0" />
+      <point x="0.0" y="68.5" />
     </edge>
     <edge source="org.example.write.WriteToReportFile" target="org.example.list.txt.GenerateListTxt" relationship="TO_ONE">
-      <point x="81.75" y="-56.0" />
-      <point x="787.75" y="77.0" />
-      <point x="890.4612068965516" y="77.0" />
-      <point x="890.4612068965516" y="57.0" />
-      <point x="673.7112068965517" y="57.0" />
-      <point x="69.75" y="31.5" />
+      <point x="81.75" y="-68.5" />
+      <point x="511.9181034482758" y="25.0" />
+      <point x="602.5" y="25.0" />
+      <point x="602.5" y="5.0" />
+      <point x="667.25" y="5.0" />
+      <point x="69.75" y="44.0" />
     </edge>
     <edge source="org.example.user.selection.UserSelection" target="org.example.update.UpdateReportFile" relationship="CREATE">
-      <point x="0.0" y="-31.5" />
-      <point x="360.21120689655174" y="395.0" />
-      <point x="867.5" y="395.0" />
-      <point x="80.75" y="43.5" />
+      <point x="0.0" y="-44.0" />
+      <point x="913.625" y="393.0" />
+      <point x="577.9181034482758" y="393.0" />
+      <point x="80.75" y="56.0" />
     </edge>
     <edge source="org.example.write.WriteToReportFile" target="org.example.write.WriteToReportFile" relationship="DEPENDENCY">
-      <point x="-109.0" y="56.0" />
-      <point x="597.0" y="229.0" />
-      <point x="522.5" y="229.0" />
-      <point x="522.5" y="153.0" />
+      <point x="-109.0" y="68.5" />
+      <point x="321.1681034482758" y="202.0" />
+      <point x="246.66810344827582" y="202.0" />
+      <point x="246.66810344827582" y="113.5" />
       <point x="-163.5" y="-0.0" />
     </edge>
     <edge source="org.example.check.CheckParsingInfo" target="org.example.check.CheckParsingInfo" relationship="DEPENDENCY">
-      <point x="-87.25" y="67.5" />
-      <point x="182.71120689655174" y="47.0" />
-      <point x="75.46120689655174" y="47.0" />
-      <point x="75.46120689655174" y="-40.5" />
+      <point x="-87.25" y="80.0" />
+      <point x="-87.75" y="-5.0" />
+      <point x="-195.0" y="-5.0" />
+      <point x="-195.0" y="-105.0" />
       <point x="-174.5" y="-0.0" />
     </edge>
     <edge source="org.example.user.selection.UserSelection" target="org.example.create.CreateFileReport" relationship="CREATE">
-      <point x="0.0" y="-31.5" />
-      <point x="360.21120689655174" y="395.0" />
-      <point x="-38.0" y="395.0" />
-      <point x="0.0" y="31.5" />
+      <point x="0.0" y="-44.0" />
+      <point x="913.625" y="393.0" />
+      <point x="1268.6681034482758" y="393.0" />
+      <point x="0.0" y="44.0" />
     </edge>
     <edge source="org.example.update.UpdateReportFile" target="org.example.write.WriteToReportFile" relationship="CREATE">
-      <point x="-80.75" y="-43.5" />
-      <point x="0.0" y="56.0" />
+      <point x="80.75" y="-56.0" />
+      <point x="577.9181034482758" y="212.0" />
+      <point x="539.1681034482758" y="212.0" />
+      <point x="109.0" y="68.5" />
     </edge>
     <edge source="org.example.Main" target="org.example.user.selection.UserSelection" relationship="CREATE">
-      <point x="0.0" y="-31.5" />
-      <point x="0.0" y="31.5" />
+      <point x="0.0" y="-44.0" />
+      <point x="0.0" y="44.0" />
     </edge>
     <edge source="org.example.write.WriteToReportFile" target="org.example.check.CheckParsingInfo" relationship="CREATE">
-      <point x="-81.75" y="-56.0" />
-      <point x="624.25" y="77.0" />
-      <point x="598.9612068965517" y="77.0" />
-      <point x="598.9612068965517" y="67.0" />
-      <point x="357.21120689655174" y="67.0" />
-      <point x="87.25" y="67.5" />
+      <point x="-81.75" y="-68.5" />
+      <point x="348.4181034482758" y="25.0" />
+      <point x="310.99999999999994" y="25.0" />
+      <point x="310.99999999999994" y="15.0" />
+      <point x="86.75" y="15.0" />
+      <point x="87.25" y="80.0" />
     </edge>
     <edge source="org.example.update.UpdateReportFile" target="org.example.update.UpdateReportFile" relationship="DEPENDENCY">
-      <point x="-80.75" y="43.5" />
-      <point x="706.0" y="378.0" />
-      <point x="605.25" y="378.0" />
-      <point x="605.25" y="314.5" />
+      <point x="-80.75" y="56.0" />
+      <point x="416.4181034482758" y="376.0" />
+      <point x="315.6681034482758" y="376.0" />
+      <point x="315.6681034482758" y="300.0" />
       <point x="-161.5" y="-0.0" />
     </edge>
     <edge source="org.example.output.OutputReportInfo" target="org.example.filter.FilterByDate" relationship="CREATE">
-      <point x="-187.0" y="-55.5" />
-      <point x="-0.0" y="44.0" />
+      <point x="0.0" y="-68.0" />
+      <point x="0.0" y="44.0" />
     </edge>
     <edge source="org.example.write.WriteToReportFile" target="org.example.parser.DOMProjectParser" relationship="CREATE">
-      <point x="-81.75" y="-56.0" />
-      <point x="624.25" y="77.0" />
-      <point x="598.9612068965517" y="77.0" />
-      <point x="598.9612068965517" y="67.0" />
-      <point x="824.4612068965517" y="67.0" />
-      <point x="-61.0" y="31.5" />
+      <point x="-81.75" y="-68.5" />
+      <point x="348.4181034482758" y="25.0" />
+      <point x="310.99999999999994" y="25.0" />
+      <point x="310.99999999999994" y="15.0" />
+      <point x="254.99999999999994" y="15.0" />
+      <point x="-61.0" y="44.0" />
     </edge>
     <edge source="org.example.user.selection.UserSelection" target="org.example.output.OutputReportInfo" relationship="CREATE">
-      <point x="0.0" y="-31.5" />
-      <point x="360.21120689655174" y="395.0" />
-      <point x="335.5" y="395.0" />
-      <point x="0.0" y="55.5" />
+      <point x="0.0" y="-44.0" />
+      <point x="913.625" y="393.0" />
+      <point x="895.1681034482758" y="393.0" />
+      <point x="0.0" y="68.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic" zoom="1.0074812967581048" showDependencies="true" x="426.5000000000001" y="254.00000000000006" />
+  <settings layout="Hierarchic" zoom="0.8059850374064839" showDependencies="true" x="-79.4647277227723" y="-63.88490099009914" />
   <SelectedNodes>
-    <node>org.example.filter.FilterByDate</node>
+    <node>org.example.create.CreateFileReport</node>
   </SelectedNodes>
   <Categories>
     <Category>Constructors</Category>
