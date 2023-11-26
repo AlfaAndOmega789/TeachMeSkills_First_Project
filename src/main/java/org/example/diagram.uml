@@ -5,7 +5,7 @@
   <nodes>
     <node x="826.625" y="418.0">org.example.user.selection.UserSelection</node>
     <node x="458.0" y="-149.0">org.example.list.txt.GenerateListTxt</node>
-    <node x="728.1681034482758" y="69.5">org.example.filter.FilterByDate</node>
+    <node x="720.1681034482758" y="45.5">org.example.filter.FilterByDate</node>
     <node x="193.99999999999994" y="-149.0">org.example.parser.DOMProjectParser</node>
     <node x="1131.6681034482758" y="256.0">org.example.create.CreateFileReport</node>
     <node x="831.625" y="556.0">org.example.Main</node>
@@ -98,8 +98,8 @@
       <point x="-161.5" y="-0.0" />
     </edge>
     <edge source="org.example.output.OutputReportInfo" target="org.example.filter.FilterByDate" relationship="CREATE">
-      <point x="0.0" y="-68.0" />
-      <point x="0.0" y="44.0" />
+      <point x="22.0" y="-68.0" />
+      <point x="-0.0" y="68.0" />
     </edge>
     <edge source="org.example.write.WriteToReportFile" target="org.example.parser.DOMProjectParser" relationship="CREATE">
       <point x="-81.75" y="-68.5" />
@@ -116,9 +116,9 @@
       <point x="0.0" y="68.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic" zoom="0.8059850374064839" showDependencies="true" x="-79.4647277227723" y="-63.88490099009914" />
+  <settings layout="Hierarchic" zoom="0.7476866132017274" showDependencies="true" x="615.5" y="239.5" />
   <SelectedNodes>
-    <node>org.example.create.CreateFileReport</node>
+    <node>org.example.filter.FilterByDate</node>
   </SelectedNodes>
   <Categories>
     <Category>Constructors</Category>
