@@ -13,7 +13,7 @@ public class OutputReportInfo {
     public static void main(String[] args) throws IOException, ParseException {
 //        outputReportInfo(PATH_ARCHIVE , NAME_REPORT_FILE);
 
-        outputReportInfo(PATH_ARCHIVE, NAME_REPORT_FILE, generateReportAmountOfTheTime(PATH_ARCHIVE, NAME_REPORT_FILE, "26112023", "27112023"));
+//        outputReportInfo(PATH_ARCHIVE, NAME_REPORT_FILE, generateReportAmountOfTheTime(PATH_ARCHIVE, NAME_REPORT_FILE, "26112023", "27112023"));
 
     }
     /**
@@ -34,7 +34,7 @@ public class OutputReportInfo {
      * @return
      * @throws IOException
      */
-    public static List<String> generateReportFullInfo(String PATH_ARCHIVE, String NAME_REPORT_FILE) throws IOException{
+    public List<String> generateReportFullInfo(String PATH_ARCHIVE, String NAME_REPORT_FILE) throws IOException{
         List<String> list = new ArrayList<>();
         String reportAbsolutePath = PATH_ARCHIVE + NAME_REPORT_FILE;
         BufferedReader reader = new BufferedReader(new FileReader(reportAbsolutePath));
@@ -73,7 +73,7 @@ public class OutputReportInfo {
      * @throws IOException
      * @throws ParseException
      */
-    public static List<String> generateReportAmountOfTheTime(String PATH_ARCHIVE, String NAME_REPORT_FILE, String date1, String date2) throws IOException, ParseException {
+    public List<String> generateReportAmountOfTheTime(String PATH_ARCHIVE, String NAME_REPORT_FILE, String date1, String date2) throws IOException, ParseException {
         FilterByDate filter = new FilterByDate();
         List<String> listFullInfo = generateReportFullInfo(PATH_ARCHIVE, NAME_REPORT_FILE);
         List<String> listAmountOfTheTime = filter.generateListAmountOfTime(date1, date2);

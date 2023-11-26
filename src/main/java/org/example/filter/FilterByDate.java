@@ -49,7 +49,7 @@ public class FilterByDate {
      * @return - List<String> в виде дат
      * @throws ParseException
      */
-    public static List<String> generateListAmountOfTime(String date1, String date2) throws ParseException {
+    public List<String> generateListAmountOfTime(String date1, String date2) throws ParseException {
         List<String> listDate = new ArrayList<>();
         SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
         Date date = sdf.parse(date1);
