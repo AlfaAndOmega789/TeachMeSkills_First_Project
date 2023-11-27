@@ -92,7 +92,7 @@ public class UserSelection {
                     output.outputReportInfo(PATH_ARCHIVE, NAME_REPORT_FILE, list);
                     break;
                 }
-            }else if(enteredUser == 4){
+            }else if(enteredUser == 4){ // пока что не работает
                 OutputReportInfo output = new OutputReportInfo();
                 WorkWithDatabase workDB = new WorkWithDatabase();
                 workDB.createTable();
