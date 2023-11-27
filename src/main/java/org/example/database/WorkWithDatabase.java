@@ -30,15 +30,50 @@ public class WorkWithDatabase {
     }
     public void addInfoToTable(String date, String file, String account_numbers, Double sum, String result) throws SQLException {
         String sql = "INSERT INTO reports ( date, file, account_numbers, sum, result) Values(?, ?, ?, ?, ?)";
-        PreparedStatement preparedStatement = connection().prepareStatement(sql);
+        PreparedStatement prepared = connection().prepareStatement(sql);
 
-        preparedStatement.setString(1, date);
-        preparedStatement.setString(2, file );
-        preparedStatement.setString(3, account_numbers);
-        preparedStatement.setDouble(4, sum);
-        preparedStatement.setString(5, result);
+        prepared.setString(1, date);
+        prepared.setString(2, file );
+        prepared.setString(3, account_numbers);
+        prepared.setDouble(4, sum);
+        prepared.setString(5, result);
 
-        preparedStatement.execute();
+        prepared.execute();
+        prepared.close();
     }
-//    public void deleteInfoT
+    public void deleteInfoToTable(int id) throws SQLException {
+        String sql = "DELETE FROM reports WHERE id = ?";
+        PreparedStatement prepared = connection().prepareStatement(sql);
+
+        prepared.setInt(1, id);
+        prepared.executeUpdate();
+        prepared.close();
+    }
+    public void updateInfoToTable(int id, String date, String file) throws SQLException {
+        String sql = "UPDATE reports SET  date = ?, file = ? WHERE id = ?";
+        PreparedStatement prepared = connection().prepareStatement(sql);
+
+        prepared.setString(1, date);
+        prepared.setString(2, file);
+        prepared.setInt(3, id);
+
+        prepared.executeUpdate();
+        prepared.close();
+    }
+    public void readInfoToTable() throws SQLException {
+        String sql = "SELECT * FROM reports";
+        Connection conn = connection();
+        ResultSet resultSet = conn.createStatement().executeQuery(sql);
+
+        while(resultSet.next()){
+            System.out.println(resultSet.getInt("id") + " | " +
+                    resultSet.getString("date") + " | " +
+                    resultSet.getString("file") + " | " +
+                    resultSet.getString("account_numbers") + " " +
+                    resultSet.getDouble("sum") + " | " +
+                    resultSet.getString("result"));
+        }
+        conn.setAutoCommit(true);
+        conn.close();
+    }
 }
