@@ -1,14 +1,21 @@
 package org.example.user.selection;
 
+import org.example.check.CheckParsingInfo;
 import org.example.create.CreateFileReport;
+import org.example.database.WorkWithDatabase;
 import org.example.filter.FilterByDate;
+import org.example.list.txt.GenerateListTxt;
 import org.example.output.OutputReportInfo;
+import org.example.parser.DOMProjectParser;
 import org.example.update.UpdateReportFile;
 import org.w3c.dom.ls.LSOutput;
+import org.xml.sax.SAXException;
 
+import javax.xml.parsers.ParserConfigurationException;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +32,7 @@ public class UserSelection {
      * 2 - вызов операции вывода списка всех переводов из файла-отчета
      * @throws IOException
      */
-    public void userSelection() throws IOException, ParseException {
+    public void userSelection() throws IOException, ParseException, SQLException, ParserConfigurationException, SAXException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.print("Выберете вариант из двух доступных:\n" +
@@ -54,7 +61,8 @@ public class UserSelection {
                         "1. Вызов  операций переводов из файла-отчета за определенную дату.\n" +
                         "2. Вызов всех операций переводов из файла-отчета.\n" +
                         "3. Вызов всех операций переводов из файла-отчета за определенный период времени. \n" +
-                        "Для выбора операции нажмите 1, 2 или 3 соответственно: "
+                        "4. Создание и з агрузка информации из файла REPORT в таблицу reports(database - mydbproject). \n" +
+                        "Для выбора операции нажмите 1, 2, 3 или 4 соответственно: "
                 );
                 int newEnteredUser = Integer.parseInt(reader.readLine());
                 System.out.println();
@@ -73,7 +81,7 @@ public class UserSelection {
                     output.outputReportInfo(PATH_ARCHIVE , NAME_REPORT_FILE, outputList);
                     break;
                 }else if(newEnteredUser == 3){
-                                        System.out.print("Введите первую дату формата ddMMyyyy: ");
+                    System.out.print("Введите первую дату формата ddMMyyyy: ");
                     String date1 = reader.readLine();
                     System.out.println();
 
@@ -84,7 +92,14 @@ public class UserSelection {
                     output.outputReportInfo(PATH_ARCHIVE, NAME_REPORT_FILE, list);
                     break;
                 }
-            }else{
+            }else if(enteredUser == 4){
+
+                WorkWithDatabase workDB = new WorkWithDatabase();
+                workDB.createTable();
+
+
+
+            } else{
                 System.out.print("Вы ввели значение отличное от 1, 2 или 3, повторите ввод снова:");
             }
         }
