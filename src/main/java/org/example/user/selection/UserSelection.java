@@ -61,7 +61,7 @@ public class UserSelection {
                         "1. Вызов  операций переводов из файла-отчета за определенную дату.\n" +
                         "2. Вызов всех операций переводов из файла-отчета.\n" +
                         "3. Вызов всех операций переводов из файла-отчета за определенный период времени. \n" +
-                        "4. Создание и з агрузка информации из файла REPORT в таблицу reports(database - mydbproject). \n" +
+                        "4. Создание и загрузка информации из файла REPORT в таблицу reports(database - mydbproject). \n" +
                         "Для выбора операции нажмите 1, 2, 3 или 4 соответственно: "
                 );
                 int newEnteredUser = Integer.parseInt(reader.readLine());
@@ -93,11 +93,15 @@ public class UserSelection {
                     break;
                 }
             }else if(enteredUser == 4){
-
+                OutputReportInfo output = new OutputReportInfo();
                 WorkWithDatabase workDB = new WorkWithDatabase();
                 workDB.createTable();
 
+                List<String> list = output.generateReportFullInfo(PATH_ARCHIVE,NAME_REPORT_FILE);
 
+                for(String str : list){
+                    workDB.addInfoToTable(str);
+                }
 
             } else{
                 System.out.print("Вы ввели значение отличное от 1, 2 или 3, повторите ввод снова:");
