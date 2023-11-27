@@ -30,12 +30,14 @@ public class WorkWithDatabase {
      * @throws SQLException
      */
     public void createTable() throws SQLException {
+//        Connection conn = connection().createStatement();
         Statement statement = connection().createStatement();
 
         statement.execute("""
                 create table reports(
                 id integer primary key auto_increment, operations varchar(1000))
                 """);
+//        statement.close();
     }
 //    public void createTable() throws SQLException {
 //        Statement statement = connection().createStatement();
@@ -51,9 +53,10 @@ public class WorkWithDatabase {
      * @param operations
      * @throws SQLException
      */
-    public void addInfoToTable(String operations) throws SQLException {
+    public void addInfoToTable(String operation) throws SQLException {
         String sql = "INSERT INTO reports (operations) VALUES(?)";
         PreparedStatement prepared = connection().prepareStatement(sql);
+        prepared.setString(1, operation);
 
         prepared.execute();
         prepared.close();
